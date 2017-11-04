@@ -1,0 +1,11 @@
+version: 1
+jobs: 
+        build:
+                working_directory: /webapp
+docker:
+        - image: circle/node
+        steps:
+                - checkout
+                - run: npm install 
+                - run: npm test
+
