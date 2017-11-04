@@ -4,6 +4,5 @@ machine:
 dependencies: 
         override:
                 - docker build -t webapp .
-test:  
-        override:
-                  - run: npm test  
+steps:    
+                - run: npm test 
