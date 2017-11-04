@@ -4,7 +4,7 @@ module.exports = {
   /** The environment to use when building the project */
   env: NODE_ENV,
   /** The full path to the project's root directory */
-  basePath: __dirnama,
+  basePath: __dirname,
   /** The name of the directory containing the application source code */
   srcDir: 'src',
   /** The file name of the application's entry point */
