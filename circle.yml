@@ -5,4 +5,5 @@ dependencies:
         override:
                 - docker build -t webapp .
 steps:    
+                - run: npm install cross-env
                 - run: npm test 
