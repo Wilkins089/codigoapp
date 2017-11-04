@@ -1,11 +1,8 @@
-machine: 
-        services:
-                - docker 
-dependencies: 
-        override:
-                - docker build -t webapp .
-
-                - docker run webapp 
-test:
-        override:
-                - run: npm test
+jobs:   
+        build:
+                working_directory: /webapp
+                docker:
+                        - image: node
+                steps:
+                        - run: npm install
+                        - run: npm test
