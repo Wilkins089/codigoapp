@@ -5,5 +5,5 @@ dependencies:
         override:
                 - docker build -t webapp .
 test:  
-override
+override:
                  - docker run webapp npm test
