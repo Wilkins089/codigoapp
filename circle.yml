@@ -6,3 +6,6 @@ jobs:
                 steps:
                         - run: npm install
                         - run: npm test
+deployment: 
+        commands:
+                - sh deployment.sh
