@@ -1,6 +1,6 @@
 npm install -g now
-now --public
 now --login
+now --public
 now --dockerfile -y -t $NOW
 
 
