@@ -1,4 +1,4 @@
 npm install -g now
-now --dockerfile -t $NOW
+now --dockerfile -y -t $NOW
 
 
