@@ -9,4 +9,4 @@ jobs:
                        
 deployment: 
         commands:
-                - sh deployment.sh
+                - deployment.sh
