@@ -5,7 +5,6 @@ jobs:
                         - image: node
                 steps:
                         - run: npm install
-                        - run: npm install -g now
                         - run: npm test
                        
 deployment: 
