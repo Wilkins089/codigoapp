@@ -5,7 +5,6 @@ RUN mkdir -p /webapp
 WORKDIR /webapp
 
 COPY package.json /webapp
-COPY /.now /
 
 RUN npm install 
 
