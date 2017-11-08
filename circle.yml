@@ -7,7 +7,7 @@ machine:
 
 dependencies: 
         override:
-                - docker build - < dockerfile
+                - docker build -t "webapp" .
 test:
         override: 
                 - docker run webapp
