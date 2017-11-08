@@ -1,6 +1,8 @@
-machine:     
+machine:   
+        node 
+
         services:
-        - node 
+
         - docker 
 
 dependencies: 
