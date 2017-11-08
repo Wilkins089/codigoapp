@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM node
 
 RUN mkdir -p /webapp
 
@@ -6,7 +6,7 @@ WORKDIR /webapp
 
 COPY package.json /webapp
 
-RUN apt-get install -y npm
+RUN npm install 
 
 COPY . /webapp
 
