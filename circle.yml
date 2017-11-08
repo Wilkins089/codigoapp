@@ -9,7 +9,6 @@ dependencies:
         override:
                 - docker build -t webapp .
 test:
-        override: 
                 - docker run webapp
                        
 deployment: 
