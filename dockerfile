@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN apt-get -y update && apt-get install -y nodejs 
 
-RUN npm install 
+RUN apt-get install -y npm
 
 RUN mkdir -p /webapp
 
