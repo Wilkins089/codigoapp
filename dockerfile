@@ -4,11 +4,11 @@ RUN mkdir -p /webapp
 
 WORKDIR /webapp
 
+COPY . /webapp
+
 COPY package.json /webapp
 
-RUN apt-get install -y npm  
-
-COPY . /webapp
+RUN aptitude install npm  
 
 EXPOSE 3000
 
