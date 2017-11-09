@@ -3,5 +3,5 @@ machine:
                 version: 9.0
 dependencies:
         override:
-                - npm install --dev
+                - npm install --only=dev
 
