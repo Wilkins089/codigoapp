@@ -1,6 +1,8 @@
 FROM ubuntu 
 
-RUN apt install -y aptitude && aptitude install npm 
+RUN apt-get -y update && apt-get install -y nodejs 
+
+RUN npm install 
 
 RUN mkdir -p /webapp
 
