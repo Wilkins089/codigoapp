@@ -6,7 +6,6 @@ WORKDIR /webapp
 
 COPY package.json /webapp
 
-RUN apt-get -y update
 RUN apt-get install -y npm  
 
 COPY . /webapp
