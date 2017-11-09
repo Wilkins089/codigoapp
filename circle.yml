@@ -1,7 +1,11 @@
 machine:
-        node:
-                version: 9.0
+        services:
+                - docker 
 dependencies:
         override:
+                - docker build -t webapp .
                 - npm install --only=dev
+test:
+        override:
+                - docker run webapp npm test
 
