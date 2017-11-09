@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM node 
 
 RUN mkdir -p /webapp
 
@@ -6,9 +6,7 @@ WORKDIR /webapp
 
 COPY . /webapp
 
-COPY package.json /webapp
-
-RUN aptitude install npm  
+RUN npm install 
 
 EXPOSE 3000
 
