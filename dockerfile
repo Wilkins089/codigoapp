@@ -1,4 +1,4 @@
-FROM node 
+FROM ubuntu 
 
 RUN mkdir -p /webapp
 
