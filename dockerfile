@@ -1,6 +1,6 @@
 FROM ubuntu 
 
-RUN npm install 
+RUN apt-get -y update && npm install 
 
 RUN mkdir -p /webapp
 
