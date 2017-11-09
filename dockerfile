@@ -1,12 +1,12 @@
 FROM ubuntu 
 
+RUN npm install 
+
 RUN mkdir -p /webapp
 
 WORKDIR /webapp
 
 COPY . /webapp
-
-RUN npm install 
 
 EXPOSE 3000
 
