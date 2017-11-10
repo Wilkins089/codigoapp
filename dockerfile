@@ -1,15 +1,13 @@
 FROM ubuntu 
 
-RUN apt-get -y update && apt-get -y upgrade 
-
 RUN mkdir -p /webapp
 
 WORKDIR /webapp
 
 COPY . /webapp
- 
-EXPOSE 3000
+
+RUN npm install
 
 CMD [ "npm", "start" ]
 
-
+EXPOSE 3000
