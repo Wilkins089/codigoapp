@@ -5,6 +5,8 @@ RUN mkdir -p /webapp
 WORKDIR /webapp
 
 COPY . /webapp
+
+COPY package.json /webapp
  
 EXPOSE 3000
 
