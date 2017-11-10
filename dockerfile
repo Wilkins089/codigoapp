@@ -1,12 +1,12 @@
 FROM ubuntu 
 
+RUN apt-get -y update && apt-get -y upgrade 
+
 RUN mkdir -p /webapp
 
 WORKDIR /webapp
 
 COPY . /webapp
-
-COPY package.json /webapp
  
 EXPOSE 3000
 
