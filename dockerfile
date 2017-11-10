@@ -1,13 +1,18 @@
-FROM ubuntu 
+FROM node:6.9
+
+EXPOSE 3000
 
 RUN mkdir -p /webapp
 
 WORKDIR /webapp
 
-COPY . /webapp
+ADD package.json /webapp
 
-RUN npm install
+RUN npm install 
 
-CMD [ "npm", "start" ]
+ADD . /webapp 
 
-EXPOSE 3000
+CMD [ "npm", "start"]
+
+
+
