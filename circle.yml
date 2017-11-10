@@ -7,3 +7,6 @@ dependencies:
 test:
         override:
                 - docker run webapp npm test
+deployment:
+        commands: 
+                - sh deploy.sh
