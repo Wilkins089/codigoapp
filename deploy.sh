@@ -1,3 +1,4 @@
 npm install -g now 
-now --public 
-now --token=$NOW
+now --public --dockerfile -t $NOW
+
+
