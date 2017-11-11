@@ -1,3 +1,3 @@
 npm install -g now 
 now --public 
-now --token $NOW
+now --token=$NOW
