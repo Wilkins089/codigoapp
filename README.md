@@ -179,3 +179,6 @@ This project wouldn't be possible without help from the community, so I'd like t
 * [Jonas Matser](https://github.com/mtsr) - For your help in triaging issues and unending support in our Gitter channel.
 
 And to everyone else who has contributed, even if you are not listed here your work is appreciated.
+
+
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zpnk/hello-world)
