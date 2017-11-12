@@ -8,7 +8,4 @@ dependencies:
                 - docker build -t webapp . 
 test:
         override:
-                - docker run webapp npm test
-deployment:
-        commands: 
-                - sh deploy.sh
+                - docker run webapp npm test 
