@@ -11,5 +11,5 @@ test:
                 - docker run webapp npm test    
 
         deployment: 
-
-                - now 
+                commands:
+                        - sh deploy.sh 
