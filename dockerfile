@@ -1,7 +1,8 @@
-FROM node:6.9
+FROM ubuntu:latest
 
 EXPOSE 3000
 
+RUN apt-get install -y nodejs
 RUN mkdir -p /webapp
 
 WORKDIR /webapp

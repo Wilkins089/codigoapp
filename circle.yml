@@ -1,6 +1,5 @@
 machine:
-        node: 
-        version: 6.9
+        ubuntu: latest
         services:
                 - docker 
 dependencies: 
