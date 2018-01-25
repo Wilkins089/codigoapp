@@ -10,6 +10,6 @@ test:
         override:
                 - docker run webapp npm test    
 
-        deployment: 
-                commands:
-                        - sh deploy.sh 
+       # deployment: 
+         #       commands:
+          #              - sh deploy.sh 
