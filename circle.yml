@@ -1,9 +1,10 @@
 machine:
-	services: 
-	- docker
+	services:
+		- docker
+
 dependencies:
 	override:
-	- docker build -t web .
+		- docker build -t web .
 test:
 	override:
-	- docker run web npm test 
+		- docker run web npm test
