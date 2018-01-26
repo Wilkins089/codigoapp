@@ -1,13 +1,11 @@
-
 machine:
-	node:
-	version: 6.9
-	services:
-		- docker
-
+node:
+version: 6.9
+services:
+- docker
 dependencies:
-	override:
-		- docker build -t web .
+override:
+- docker build -t web .
 test:
-	override:
-		- docker run web npm test
+override:
+- docker run web npm test
