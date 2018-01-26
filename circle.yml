@@ -1,14 +1,15 @@
 machine:
-        ubuntu: latest
-        services:
-                - docker 
-dependencies: 
-        override:
-                - docker build -t webapp . 
-test:
-        override:
-                - docker run webapp npm test    
+	node:
+	version: 8 
+	services: 
+		- docker 
 
-       # deployment: 
-         #       commands:
-          #              - sh deploy.sh 
+dependencies: 
+	override:
+		- docker build -t web . 
+
+test:
+	override:
+
+		- docker run web npm test
+
