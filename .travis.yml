@@ -15,4 +15,4 @@ script:
   - yarn build
 
 after_success:
-  - yarn codecov10
+  - yarn codecov12
